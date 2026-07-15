@@ -976,6 +976,12 @@ category("Libraries/Frameworks") {
   }
   subcategory("Tools") {
     link {
+      github = "seqra/opentaint"
+      name = "OpenTaint"
+      desc = "Open source taint analysis engine designed to work with AI agents. During a security review, the agent enacts what it learns: vulnerability patterns as taint rules forbidding classes of dataflow traces, and code behavior as summaries letting the engine see through code it never analyzed. The engine itself is built to hold all three corners of the classic trilemma — scan time, false alarms, missed findings — tracking traces across procedures, fields, and aliases at scale. Learning is expensive and unpredictable, searching cheap and deterministic — so the agent learns the code on demand, the engine searches it on every scan, and the security review becomes lean and continuous."
+      setTags("static-analysis", "security", "sast", "taint-analysis")
+    }
+    link {
       github = "SonarSource/sonarlint-intellij"
       desc = "An IDE extension that helps you detect and fix quality issues as you write code."
       setTags("scripting", "ide", "linter", "language")
